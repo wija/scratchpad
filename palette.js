@@ -26,6 +26,7 @@
   
  */
 !function( scope ){
+    'use strict';
 
     function objSome(obj, pred) {
         for(var i in obj) {

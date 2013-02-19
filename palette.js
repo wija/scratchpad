@@ -51,9 +51,9 @@ Palette.toCSS = function(rgb) {
 }
 
 Palette.prototype.getColor = function(itemType) {
-    if(this.colorsAssigned[itemType] === undefined) {
+    if( typeof this.colorsAssigned[itemType] === 'undefined' ) {
         var nextFromPalette = this.palette.shift();
-        if(nextFromPalette !== undefined) {
+        if( typeof nextFromPalette !== 'undefined' ) {
             this.colorsAssigned[itemType] = nextFromPalette;
         } else {
             do {

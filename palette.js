@@ -31,7 +31,7 @@ function Palette(palette, colorsTooClosePred, retFn) {
     
     this.colorsTooClosePred = colorsTooClosePred || function(rgb1, rgb2) { return Palette.rgbDistance(rgb1, rgb2) < 20; } 
     
-    this.retFn = retFn || function(rgb) { return Palette.toCSS(rgb); }
+    this.retFn = retFn || Palette.toCSS
 
     this.colorsAssigned = {};
     

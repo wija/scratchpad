@@ -14,7 +14,7 @@
  p.getColor("coup");  // "rgb(141,211,199)"
  p.getColor(45);      // "rgb(255,255,179)"
  p.getColor("coup");  // "rgb(141,211,199)"
- p2 = getPalette([[14, 200, 36], [45, 130, 120]])
+ p2 = new Palette([[14, 200, 36], [45, 130, 120]])
  p2.getColor("a")     // "rgb(14,200,36)"
  p2.getColor({eventType: 'violent', source: 'news'}) // "rgb(45,130,120)"
  p2.getColor({eventType: 'violent', source: 'news'}) // "rgb(45,130,120)"
